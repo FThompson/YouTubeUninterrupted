@@ -1,0 +1,26 @@
+{
+    "name": "Youtube Uninterrupted",
+    "version": "1.0.0",
+    "description": "Continue playing YouTube in the background without interruptions every video.",
+    "manifest_version": 2,
+    "permissions": [
+        "*://*.youtube.com/watch*",
+        "tabs"
+    ],
+    "background": {
+        "scripts": [ "app/background.js" ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [ "*://*.youtube.com/watch*" ],
+            "js": [ "app/continue.js" ]
+        }
+    ],
+    "icons": {
+        "16": "static/icon16.png",
+        "32": "static/icon32.png",
+        "48": "static/icon48.png",
+        "128": "static/icon128.png"
+    }
+}
