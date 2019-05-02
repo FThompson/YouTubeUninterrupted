@@ -1,8 +1,8 @@
 {
     "name": "Youtube Uninterrupted",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Continue playing YouTube in the background without interruptions.",
-    "homepage-url": "https://github.com/FThompson/YouTubeUninterrupted",
+    "homepage_url": "https://github.com/FThompson/YouTubeUninterrupted",
     "manifest_version": 2,
     "permissions": [
         "*://*.youtube.com/watch*",
