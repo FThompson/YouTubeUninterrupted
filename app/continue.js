@@ -13,7 +13,7 @@
     
     function observePause(mutationsList, observer) {
         for (let mutation of mutationsList) {
-            console.log(mutation);
+            // console.log(mutation);
             if (mutation.target.tagName === 'YT-FORMATTED-STRING' &&
                     mutation.target.parentNode.id === 'scrollable' &&
                     mutation.target.innerText === 'Video paused. Continue watching?') {
