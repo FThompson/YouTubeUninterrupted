@@ -34,5 +34,5 @@ function endKeepActive(tabId) {
 
 function log(message) {
     let timestamp = new Date().toLocaleTimeString();
-    console.log('[' + timestamp + '] YOUTUBE-UNINTERRUPTED: ' + message.toString());
+    console.log('[' + timestamp + '] ' + message.toString());
 }
