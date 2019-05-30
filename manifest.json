@@ -1,6 +1,6 @@
 {
     "name": "Youtube Uninterrupted",
-    "version": "1.0.1",
+    "version": "1.1",
     "description": "Continue playing YouTube in the background without interruptions.",
     "homepage_url": "https://github.com/FThompson/YouTubeUninterrupted",
     "manifest_version": 2,
@@ -12,12 +12,6 @@
         "scripts": [ "app/background.js" ],
         "persistent": false
     },
-    "content_scripts": [
-        {
-            "matches": [ "*://*.youtube.com/watch*" ],
-            "js": [ "app/continue.js" ]
-        }
-    ],
     "icons": {
         "16": "static/icon16.png",
         "32": "static/icon32.png",
