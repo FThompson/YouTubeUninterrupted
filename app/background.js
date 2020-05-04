@@ -3,7 +3,7 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (url.hostname.endsWith('youtube.com')) {
         if (tab.status === 'complete' && changeInfo.status === 'complete') {
             let isWatch = url.pathname.startsWith('/watch');
-            chrome.tabs.sendMessage(tabId, { message: 'reload', url, isWatch });
+            chrome.tabs.sendMessage(tabId, { message: 'reload', url: url.href, isWatch });
         }
     }
 });
